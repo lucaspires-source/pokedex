@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css"
 import NavBar from "./components/layout/NavBar"
 
 import './App.css';
 import Dashboard from './components/layout/Dashboard';
-function App() {
+
+class App extends Component{
+  render(){
   return (
     <div className="App">
       <NavBar/>
-      <Dashboard/>
+      <div className="container">
+        <Dashboard/>
+      </div>
     </div>
   );
 }
-
+}
 export default App;
