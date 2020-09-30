@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from "styled-components"
 import spinner from "../pokemon/Spinning.gif"
+import { Link } from 'react-router-dom';
 const Sprite = styled.img`
 
     width:5em;
@@ -9,6 +10,7 @@ const Sprite = styled.img`
     `;
 
     const Card = styled.div`
+    background-color: #fafafa98;
     opacity: 0.95;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -20,6 +22,18 @@ const Sprite = styled.img`
     -ms-user-select: none;
     user-select: none;
     -o-user-select: none;
+  `;
+  
+  const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: black;
+    &:focus,
+    &:hover,
+    &:visited,
+    &:link,
+    &:active {
+      text-decoration: none;
+    }
   `;
   
 
@@ -45,6 +59,7 @@ export default class PokemonCard extends Component {
 
         return (
             <div className="col-md-3 col-sm-6 mb-5">
+                <StyledLink to={`pokemon/${this.state.pokemonIndex}`}>
                     <Card className="card">
                             <h5 className="card-header">{this.state.pokemonIndex}</h5>
                             {this.state.imageLoading ? (
@@ -74,6 +89,7 @@ export default class PokemonCard extends Component {
                                 <h6 className="card-title" class="text-capitalize" >{this.state.name}</h6>
                             </div>
                     </Card>
+                </StyledLink>
                 
             </div>
         )

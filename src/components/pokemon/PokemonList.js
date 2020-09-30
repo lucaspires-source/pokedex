@@ -27,7 +27,7 @@ export default class PokemonList extends Component {
                         ))}
                     </div>
             ):(
-                <h1>Pai ta on</h1>
+                <h1>Now Loading...</h1>
                 )}
             </React.Fragment>
         );
