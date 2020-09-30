@@ -431,7 +431,7 @@ export default class Pokemon extends Component {
                   <div className="col-6">
                     <h6 className="float-right">EVs:</h6>
                   </div>
-                  <div className="col-6">
+                  <div className="col-6" class="text-capitalize">
                     <h6 className="float-left">{this.state.evs}</h6>
                   </div>
                 </div>

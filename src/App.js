@@ -6,7 +6,7 @@ import './App.css';
 import Dashboard from './components/layout/Dashboard';
 import backgroundImg from "./pattern.png"
 import Pokemon from "./components/pokemon/Pokemon"
-import SearchBar from './components/search/searchBar';
+
 
 class App extends Component{
   render(){
