@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and was made based on a tutorial from Chris Stayte youtube channel https://www.youtube.com/watch?v=XehSJF85F38&list=PLqjmkwEUXw-smDLHc4jvScz_cz8iORHoT&index=1&t=7653s. It was a way to pratice Style Components and used Bootstrap and the data was from  https://pokeapi.co/
 
 ## Available Scripts
 
